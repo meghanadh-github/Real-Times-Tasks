@@ -1,0 +1,19 @@
+To install MongoDB in an AWS EC2 instance, you can follow the below steps:
+
+Launch an AWS EC2 instance with an Amazon Linux AMI.
+
+Connect to your EC2 instance using SSH. 
+
+Update the package index by running the following command:
+	#sudo yum update -y
+	#sudo vi /etc/yum.repos.d/mongodb-org-4.4.repo
+        [mongodb-org-4.4]
+        name=MongoDB Repository
+        baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/4.4/x86_64/
+        gpgcheck=1
+        enabled=1
+        gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
+                save anad exit.
+	#sudo yum install -y mongodb-org
+	#sudo systemctl start mongod
+	#sudo systemctl status mongod
