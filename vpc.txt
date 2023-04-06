@@ -1,0 +1,22 @@
+vpc creation
+ 
+vpc create 
+give sider range  - 10.0.0.0/16
+crete vpc  - go to actions - edit enable host name 
+
+create subnets
+app-private-1----/18  --- 10.0.0.0/18
+app-private-2---/18-------10.0.64.0/18
+app-private-3----/18-------10.0.128.0/18
+
+data-private-1---/21------10.0.192.0/21
+data-private-2---/21-------10.0.200.0/21
+data-private-3---/21--------10.0.208.0/21
+
+public subnet-1--/21-------10.0.216.0/21
+public subnet -2--/21-----10.0.224.0/21
+public subnet-3---/21-----10.0.232.0/21
+
+
+
+
